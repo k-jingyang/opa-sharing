@@ -49,14 +49,26 @@ For each access via the API endpoint, **Query** ![w:50 l:50](https://d33wubrfki0
 
 --- 
 # Demo with Spring Security
-1. Show unsecured access to resource
-1. Show database information
+1. Show unsecured access to general info and location info
+1. Show access control information (next slide)
 1. Secure the application, explain AccessDecisionManager & Voter
-1. Login with unauthorised user
+1. Access general info with *aqua_grunt*
 1. Open OPA container logs 
-`docker logs <CONTAINER_NAME> 2>&1 >/dev/null | jq '.'`
-1. Login with authorised user
+`docker logs -f <CONTAINER_NAME> 2>&1 >/dev/null | jq '.'`
+1. Access general info then location info with *magma_grunt*
+1. Access location info with *magma_galatic_grunt*
 1. Show tests
+---
+## Team & Pokemon Information
+| Pokemon ID  | Owner | Collaborator | Viewer |
+|---|:-------:|:--------------:|:-------:|
+|1 (Bulbasaur) | Rocket | Galactic | Magma  
+## Access Control Policy
+|   | Owner | Collaborator | Viewer |
+|---|:-------:|:--------------:|:-------:|
+|General| READ | READ | READ |
+|Location| READ | READ |    |
+
 
 ---
 # Deployment
