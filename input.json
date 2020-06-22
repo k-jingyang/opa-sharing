@@ -1,28 +1,7 @@
 {
-  "path": ["/"],
-  "headers": {
-    "sec-fetch-mode": "navigate",
-    "referer": "http://localhost:8080/login",
-    "sec-fetch-site": "same-origin",
-    "accept-language": "en-CA,en;q=0.9,en-GB;q=0.8,en-US;q=0.7,zh-CN;q=0.6,zh;q=0.5",
-    "cookie": "OAuth_Token_Request_State=51696801-583d-413c-8ee6-b4ec41a1f4cc; JSESSIONID=B69BE901CA036861EF560CAFCD10D2CE",
-    "sec-fetch-user": "?1",
-    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
-    "host": "localhost:8080",
-    "upgrade-insecure-requests": "1",
-    "connection": "keep-alive",
-    "cache-control": "max-age=0",
-    "accept-encoding": "gzip, deflate, br",
-    "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36",
-    "sec-fetch-dest": "document"
-  },
+  "path": [""],
   "method": "GET",
   "auth": {
-    "authorities": [{ "authority": "ROLE_USER" }],
-    "details": {
-      "remoteAddress": "0:0:0:0:0:0:0:1",
-      "sessionId": "1F654E0D2145AB7188E28176AAB4C656"
-    },
     "authenticated": true,
     "principal": {
       "password": null,
@@ -31,9 +10,15 @@
       "accountNonExpired": true,
       "accountNonLocked": true,
       "credentialsNonExpired": true,
-      "enabled": true
+      "enabled": true,
+      "team": ["LAWYER", "CARTEL"]
     },
     "credentials": null,
     "name": "saul"
+  },
+  "associates" : {
+    "friends" : ["MIKE", "KIM"],
+    "enemies" : ["HOWARD"],
+    "siblings" : ["CHUCK"]
   }
 }
