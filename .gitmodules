@@ -1,0 +1,3 @@
+[submodule "spring-boot-diy-access-control"]
+	path = spring-boot-diy-access-control
+	url = https://github.com/k-jingyang/spring-boot-diy-access-control.git
