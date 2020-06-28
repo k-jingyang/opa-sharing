@@ -12,6 +12,13 @@ backgroundImage: url('https://marp.app/assets/hero-background.jpg')
 # **Open Policy Agent**
 ---
 # Overview
+- OPA
+- OPA Sytax Demo
+- KMO Use Case
+- KMO - OPA Integration (Spring Security) Demo 
+
+---
+# OPA
 Decouples access control policy **decision making** from **enforcement** 
 
 ![bg right contain](https://d33wubrfki0l68.cloudfront.net/b394f524e15a67457b85fdfeed02ff3f2764eb9e/6ac2b/docs/latest/images/opa-service.svg)
@@ -24,9 +31,6 @@ Decouples access control policy **decision making** from **enforcement**
 # Why OPA?
 1. Rego provides a declarative syntax when it comes to specifying your policy
 
-```
-// Show some rego syntax
-```
 ---
 # Demo with VSCode
 Query & Policy 
@@ -37,7 +41,7 @@ Query & Policy
 # KMO Recap
 For each resource, there's owner team, collaborator teams, etc... (ACL of the resource)
 
-A user can be part of many teams. These teams will be matched against the ACL to see if the user has access.
+A user can be part of many teams. These teams will be matched against the resource ACL to see if the user has access.
 
 ---
 # How will it be done?
@@ -59,8 +63,8 @@ For each access via the API endpoint, **Query** ![w:50 l:50](https://d33wubrfki0
 1. Access location info with *magma_galatic_grunt*
 1. Show tests
 ---
-## Team & Pokemon Information
-| Pokemon ID  | Owner | Collaborator | Viewer |
+## Team & Resource Information
+| Resource ID  | Owner | Collaborator | Viewer |
 |---|:-------:|:--------------:|:-------:|
 |1 (Bulbasaur) | Rocket | Galactic | Magma  
 ## Access Control Policy

@@ -7,10 +7,6 @@
       "password": null,
       "username": "saul",
       "authorities": [{ "authority": "ROLE_USER" }],
-      "accountNonExpired": true,
-      "accountNonLocked": true,
-      "credentialsNonExpired": true,
-      "enabled": true,
       "team": ["LAWYER", "CARTEL"]
     },
     "credentials": null,
